@@ -1,0 +1,14 @@
+C:\Users\Omkar\source\repos\Cases\Cases\obj\Debug\netcoreapp3.1\Cases.csproj.AssemblyReference.cache
+C:\Users\Omkar\source\repos\Cases\Cases\obj\Debug\netcoreapp3.1\Cases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omkar\source\repos\Cases\Cases\obj\Debug\netcoreapp3.1\Cases.AssemblyInfoInputs.cache
+C:\Users\Omkar\source\repos\Cases\Cases\obj\Debug\netcoreapp3.1\Cases.AssemblyInfo.cs
+C:\Users\Omkar\source\repos\Cases\Cases\obj\Debug\netcoreapp3.1\Cases.csproj.CoreCompileInputs.cache
+C:\Users\Omkar\source\repos\Cases\Cases\bin\Debug\netcoreapp3.1\Cases.exe
+C:\Users\Omkar\source\repos\Cases\Cases\bin\Debug\netcoreapp3.1\Cases.deps.json
+C:\Users\Omkar\source\repos\Cases\Cases\bin\Debug\netcoreapp3.1\Cases.runtimeconfig.json
+C:\Users\Omkar\source\repos\Cases\Cases\bin\Debug\netcoreapp3.1\Cases.runtimeconfig.dev.json
+C:\Users\Omkar\source\repos\Cases\Cases\bin\Debug\netcoreapp3.1\Cases.dll
+C:\Users\Omkar\source\repos\Cases\Cases\bin\Debug\netcoreapp3.1\Cases.pdb
+C:\Users\Omkar\source\repos\Cases\Cases\obj\Debug\netcoreapp3.1\Cases.dll
+C:\Users\Omkar\source\repos\Cases\Cases\obj\Debug\netcoreapp3.1\Cases.pdb
+C:\Users\Omkar\source\repos\Cases\Cases\obj\Debug\netcoreapp3.1\Cases.genruntimeconfig.cache
