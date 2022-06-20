@@ -4,7 +4,7 @@ namespace Calculater
 {
     class Class1
     {
-        static void Main(string[] args)
+        static void Main5(string[] args)
         {
 
             Console.WriteLine("Enter the action you want to perform");

@@ -1,0 +1,46 @@
+<table>
+    <tr>
+        <td>Customer Name</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.CustomerName" type="text" placeholder="Enter Your Name">
+        </td>
+    </tr>
+    <tr>
+        <td>Customer Code</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.CustomerCode" type="text" placeholder="Enter Code">
+        </td>
+    </tr>
+    <tr>
+        <td>Customer Amount</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.CustomerAmount" type="text" placeholder="Enter Amount">
+        </td>
+    </tr>
+    <input style="background-color: green" type="submit" (click)="AddCustomer()">
+    <!-- <input style="background-color: green" type="button" (click)="getData()" value="getData"/> -->
+</table>
+
+<table style="background-color: purple; color: blanchedalmond; margin-top: 5px;" border="2">
+    <tr>
+        <td style="padding: 5px; border: 2px solid black;">Customer Name</td>
+        <td style="padding: 5px; border: 2px solid black;">Customer Code</td>
+        <td style="padding: 5px; border: 2px solid black;">Customer Amount</td>
+        <td style="padding: 5px; border: 2px solid black;">Actions</td>
+    </tr>
+    <tr *ngFor="let item of CustmerModels">
+        <td style="border: 5; padding: 10px;">
+            {{item.CustomerName}}
+        </td>
+        <td style="border: 5; padding: 10px;">
+            {{item.CustomerCode}}
+        </td>
+        <td style="border: 5; padding: 10px;">
+            {{item.CustomerAmount}}
+        </td>
+        <td>
+            <input style="background-color: yellowgreen; margin: 2px;" type="button" value="Edit" (click)="EditCustomer(item)" />
+            <input style="background-color: red; margin: 2px;" type="button" value="Delete" (click)="DeleteCustomer(item)" />
+        </td>
+    </tr>
+</table>
