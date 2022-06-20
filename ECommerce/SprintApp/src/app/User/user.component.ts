@@ -21,7 +21,7 @@ export class UserComponent {
       UserName:this.UserModel.UserName,
       UserPassword:this.UserModel.UserPassword,
     }
-    this.httpz.post("https://localhost:44386/api/User",userdto).subscribe(res=>this.PostSuccess(res),res=>this.PostError(res));
+    this.httpz.post("https://localhost:44380/api/User",userdto).subscribe(res=>this.PostSuccess(res),res=>this.PostError(res));
    
     this.UserModel=new User();
   }
@@ -35,7 +35,7 @@ export class UserComponent {
   }
   getData(){
     console.log("Working");
-    this.httpz.get("https://localhost:44386/api/User").subscribe(res=>this.GetSuccess(res),res=>this.GetError(res));
+    this.httpz.get("https://localhost:44380/api/User").subscribe(res=>this.GetSuccess(res),res=>this.GetError(res));
   }
   GetSuccess(input:any){
     this.UserModels=input;

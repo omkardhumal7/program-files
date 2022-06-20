@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AdminRoutes } from '../Routing/routing.admin';
 import { AdminComponent } from '../Admin/admin.component';
+import {HttpClientModule} from '@angular/common/http';
+
 
 
 @NgModule({
@@ -13,6 +15,7 @@ import { AdminComponent } from '../Admin/admin.component';
   imports: [
     CommonModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forChild(AdminRoutes)
   ],
   providers: [],

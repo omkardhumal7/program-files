@@ -1,0 +1,48 @@
+<p>product works</p>
+
+
+<table align="center">
+    <tr>
+        <td>Product Id </td>
+        <td>
+            <input [(ngModel)]="ProductModel.ProductID" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Name </td>
+        <td>
+            <input [(ngModel)]="ProductModel.ProductName" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Category </td>
+        <td>
+            <input [(ngModel)]="ProductModel.Category" type="text">
+        </td>
+    </tr>
+
+    <input type="submit" (click)="AddProduct()">
+    <input type="button" (click)="getData()" value="getData"/>
+
+</table>
+<table align="center" border="3">
+    <tr>
+        <td>
+            Product ID
+        </td>
+        <td>Product Name</td>
+        <td>Product Category</td>
+    </tr>
+    <tr ngFor="let item of ProductModels">
+
+        <td>
+            {{ProductModel.ProductID}}
+        </td>
+        <td>
+            {{ProductModel.ProductName}}
+        </td>
+        <td>
+            {{ProductModel.Category}}
+        </td>
+    </tr>
+</table>
