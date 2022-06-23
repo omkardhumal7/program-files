@@ -9,7 +9,7 @@ export class ProductComponent{
   constructor(public httpc:HttpClient){
 
   }
-  title='ecommerceproject';
+  title='SPRINTAPP';
   ProductModel:Product=new Product();
   ProductModels:Array<Product>=new Array<Product>();
   AddProduct(){

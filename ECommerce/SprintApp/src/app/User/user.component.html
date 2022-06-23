@@ -1,24 +1,24 @@
-<div>
+<div style="padding-top: 80px">
     <table>
         <tr>
             <td>User ID</td>
             <td>
-                <input [(ngModel)]="UserModel.Userid" type="text">
+                <input [(ngModel)]="UserModel.Userid" type="text" style="margin: 5px;">
             </td>
         </tr>
         <tr>
             <td>User Name</td>
             <td>
-                <input [(ngModel)]="UserModel.UserName" type="text">
+                <input [(ngModel)]="UserModel.UserName" type="text" style="margin: 5px;">
             </td>
         </tr>
         <tr>
             <td>User Password</td>
             <td>
-                <input [(ngModel)]="UserModel.UserPassword" type="text">
+                <input [(ngModel)]="UserModel.UserPassword" type="text" style="margin: 5px;">
             </td>
         </tr>
-        <input style="background-color: green" type="submit" (click)="AddUser()">
+        <button type="submit" class="btn btn-success" (click)="AddUser()" style="margin: 5px;">Submit</button> 
     </table>
 </div>
 

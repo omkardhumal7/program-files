@@ -1,12 +1,14 @@
 import { AdminComponent } from "../Admin/admin.component";
 import { HomeComponent } from "../Home/home.component";
+import { ProductComponent } from "../Product/product.component";
 import { UserComponent } from "../User/user.component";
 
 export const MainRoutes=[
     {path:'',component:HomeComponent},
     {path:'Home',component:HomeComponent},
     {path:'User',loadChildren:()=>import('../User/user.module').then(m=>m.UserModule)},
-    {path:'Admin',loadChildren:()=>import('../Admin/admin.component').then(m => m.AdminComponent)}
+    {path:'Admin',loadChildren:()=>import('../Admin/admin.component').then(m => m.AdminComponent)},
+    {path:'Product',loadChildren:()=>import('../Product/product.component').then(m=>m.ProductComponent)}
 ];
 
 // import { CustomerComponent } from "../customer/customer.component";

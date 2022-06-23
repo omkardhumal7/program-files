@@ -18,8 +18,10 @@ namespace EcommerceAPI.Models
         }
 
         public virtual DbSet<AdminTable> AdminTables { get; set; }
+        public virtual DbSet<LoginTable> LoginTables { get; set; }
         public virtual DbSet<ProductTable> ProductTables { get; set; }
         public virtual DbSet<UserTable> UserTables { get; set; }
+        public object LoginTable { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -45,6 +47,21 @@ namespace EcommerceAPI.Models
                 entity.Property(e => e.AdminName).HasMaxLength(50);
 
                 entity.Property(e => e.Password).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<LoginTable>(entity =>
+            {
+                entity.ToTable("LoginTable");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.IsAdmin)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Password).HasMaxLength(50);
+
+                entity.Property(e => e.UserName).HasMaxLength(50);
             });
 
             modelBuilder.Entity<ProductTable>(entity =>

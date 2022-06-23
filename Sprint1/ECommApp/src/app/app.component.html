@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    <img src="../assets/logo.jpg" style="width: 5%;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="LoggedIn(false)" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  *ngIf="LoggedIn(false)" routerLink="/register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  *ngIf="LoggedIn(true)" routerLink="/account">My Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  *ngIf="LoggedIn(true)" (click)="LogOut()">Logout</a>
+        </li>
+      </ul>
+    </div>
+    <div class="search" style="width: 500px; display: flex;">
+      <input type="text" class="search-box" placeholder="Search products" style="width: 390px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #d1d1d1;
+      text-transform: capitalize;
+      background: none;
+      color: whitesmoke;
+      outline: none;">
+      <button class="btn btn-md btn-success" style="margin-left: 5px;">search</button>
+  </div>
+  </div>
+</nav>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
