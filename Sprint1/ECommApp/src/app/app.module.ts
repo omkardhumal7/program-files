@@ -11,6 +11,7 @@ import { AccountComponent } from './account/account.component';
 import { HomeComponent } from './home/home.component';
 import { AuthService } from './services/auth.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -19,15 +20,19 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     RegisterComponent,
     AccountComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    CartComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule
   ],
+
   providers: [AuthService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
