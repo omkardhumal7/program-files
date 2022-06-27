@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { AuthService } from './services/auth.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CartComponent } from './cart/cart.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { CartComponent } from './cart/cart.component';
     HomeComponent,
     DashboardComponent,
     CartComponent,
+    AdminComponent,
   ],
 
   imports: [
