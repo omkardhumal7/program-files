@@ -10,6 +10,8 @@ import { CartComponent } from './cart/cart.component';
 import { AdminComponent } from './admin/admin.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { FinalorderComponent } from './finalorder/finalorder.component';
+import { CategoryComponent } from './category/category.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 const routes: Routes = [
   {
@@ -51,7 +53,15 @@ const routes: Routes = [
   {
     path: 'finalorder',
     component: FinalorderComponent
-  }
+  },
+  {
+    path: 'category',
+    component: CategoryComponent
+  },
+  {
+    path:'userdetails',
+    component:UserDetailsComponent
+  },
 ];
 
 @NgModule({

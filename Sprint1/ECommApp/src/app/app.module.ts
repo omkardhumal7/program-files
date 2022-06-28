@@ -13,6 +13,8 @@ import { AuthService } from './services/auth.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CartComponent } from './cart/cart.component';
 import { AdminComponent } from './admin/admin.component';
+import { CategoryComponent } from './category/category.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { AdminComponent } from './admin/admin.component';
     DashboardComponent,
     CartComponent,
     AdminComponent,
+    CategoryComponent,
+    UserDetailsComponent,
   ],
 
   imports: [
