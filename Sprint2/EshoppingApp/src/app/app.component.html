@@ -11,7 +11,7 @@
 
         <div class="search" style="width: 40rem;">
           <i class="fa fa-search"></i>
-          <input type="text" class="form-control" placeholder="Search for products, brands and more...">
+          <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search for products, brands and more...">
           <button class="btn btn-primary">Search</button>
         </div>
       </div>

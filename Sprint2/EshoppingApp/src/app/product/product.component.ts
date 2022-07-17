@@ -23,6 +23,10 @@ searchKey:string = " ";
     this.products.forEach((a :any) =>{
     Object.assign(a,{quantity:1});
   });
+});
+
+this.CartService.search.subscribe((val:any)=>{
+  this.searchKey = val;
 })
   }
 

@@ -8,7 +8,7 @@ export class CartService {
 
   public cartItemList: any = []
   public products = new BehaviorSubject<any>([]);
-  //public search = new BehaviorSubject<string>("");
+  public search = new BehaviorSubject<string>("");
 
   constructor() { }
   getProductts() {
