@@ -52,10 +52,10 @@
             <a class="btn btn-outline-success mx-1" *ngIf="LoggedIn(false)" routerLink="/register">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  *ngIf="LoggedIn(true)" routerLink="/account">My Account</a>
+            <a class="btn btn-outline-success mx-1"  *ngIf="LoggedIn(true)" routerLink="/account">My Account</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  *ngIf="LoggedIn(true)" (click)="LogOut()">Logout</a>
+            <a class="btn btn-outline-success mx-1"  *ngIf="LoggedIn(true)" (click)="LogOut()">Logout</a>
           </li>
         </ul>
       </div>
