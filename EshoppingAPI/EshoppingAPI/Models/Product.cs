@@ -15,5 +15,6 @@ namespace EshoppingAPI.Models
         public decimal? ProductDiscount { get; set; }
         public decimal? ProductMrp { get; set; }
         public decimal? ProductSellingPrice { get; set; }
+        public int? IsActive { get; set; }
     }
 }

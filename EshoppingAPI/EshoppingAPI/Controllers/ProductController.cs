@@ -24,7 +24,15 @@ namespace EshoppingAPI.Controllers
         }
         [HttpPost]
         public String post([FromBody] Product tp)
+
         {
+            if (tp.IsActive == 1)
+            {
+                db.SaveChanges();
+            }
+            else
+                return "Product Not Found";
+
             db.Products.Add(tp);
             db.SaveChanges();
             return "success";
