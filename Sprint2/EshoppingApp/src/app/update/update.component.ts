@@ -6,10 +6,10 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  templateUrl: './update.component.html',
+  styleUrls: ['./update.component.css']
 })
-export class AdminComponent implements OnInit {
+export class UpdateComponent implements OnInit {
 
 
 
@@ -34,7 +34,7 @@ export class AdminComponent implements OnInit {
       productSellingPrice:Number(this.adminprod.productSellingPrice),
 
     }
-    this.httpc.post("https://localhost:44388/api/Product",admindto).subscribe(res=>this.PostSuccess(res),res=>this.PostError(res));
+    this.httpc.put("https://localhost:44388/api/Product",admindto).subscribe(res=>this.PostSuccess(res),res=>this.PostError(res));
     this.adminprod=new Product();
   }
   PostSuccess(res:any){
@@ -54,6 +54,9 @@ export class AdminComponent implements OnInit {
   }
   GetError(input:any){
     console.log(input);
+  }
+  EditProduct(input: Product) {
+    this.adminprod = input;
   }
 
 }

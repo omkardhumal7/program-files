@@ -26,16 +26,29 @@ namespace EshoppingAPI.Controllers
         public String post([FromBody] Product tp)
 
         {
-            if (tp.IsActive == 1)
-            {
-                db.SaveChanges();
-            }
-            else
-                return "Product Not Found";
+            //if (tp.IsActive == 1)
+            //{
+            //    db.SaveChanges();
+            //}
+            //else
+            //    return "Product Not Found";
 
             db.Products.Add(tp);
             db.SaveChanges();
-            return "success";
+            return "Success";
+        }
+        [HttpPut]
+        public string Put([FromBody] Product tblsample)
+        {
+            var tblsampleObj = db.Products.Where(x => x.Id == tblsample.Id);
+            if (tblsampleObj != null)
+            {
+                db.Products.Update(tblsample);
+                db.SaveChanges();
+                return "Success";
+            }
+
+            return "Fail";
         }
     }
 }

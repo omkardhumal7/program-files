@@ -66,6 +66,7 @@
                 <td> Mrp</td>
                 <td> Discount</td>
                 <td> productSellingPrice</td>
+                <td> Action</td>
             </tr>
             <tr *ngFor="let item of adminprods">
                 <td>{{item.id}}</td>
@@ -77,6 +78,7 @@
                 <td>{{item.productDiscount}}</td>
                 <td>{{item.productSellingPrice}}</td>
 
+                <input type="button" class="btn btn-danger" style="margin: 5px" value="Update" (click)="EditProduct(item)" />
             </tr>
         </table>
     </div>
